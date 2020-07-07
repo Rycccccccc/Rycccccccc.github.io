@@ -11,6 +11,20 @@
     <content type="html"><![CDATA[<h3 id="博客搭建的大致分为三步"><a href="#博客搭建的大致分为三步" class="headerlink" title="博客搭建的大致分为三步"></a>博客搭建的大致分为三步</h3><ol><li>安装hexo、node.js 、git</li><li>创建github账号、新建仓库</li><li>选择hexo主题, 修改相应的配置项</li></ol><h3 id="第1步：-安装hexo、node-js-、git"><a href="#第1步：-安装hexo、node-js-、git" class="headerlink" title="第1步： 安装hexo、node.js 、git"></a>第1步： 安装hexo、node.js 、git</h3><h3 id="第2步：-创建github账号、新建仓库"><a href="#第2步：-创建github账号、新建仓库" class="headerlink" title="第2步： 创建github账号、新建仓库"></a>第2步： 创建github账号、新建仓库</h3><h3 id="第3步：-选择hexo主题-修改相应的配置项"><a href="#第3步：-选择hexo主题-修改相应的配置项" class="headerlink" title="第3步： 选择hexo主题, 修改相应的配置项"></a>第3步： 选择hexo主题, 修改相应的配置项</h3>]]></content>
     
     
+    <categories>
+      
+      <category>记录</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Hexo</tag>
+      
+      <tag>博客搭建</tag>
+      
+    </tags>
     
   </entry>
   
@@ -24,6 +38,20 @@
     <content type="html"><![CDATA[<h2 id="首页体验"><a href="#首页体验" class="headerlink" title="首页体验"></a>首页体验</h2><h2 id="测试标题"><a href="#测试标题" class="headerlink" title="测试标题"></a>测试标题</h2><h3 id="测试子标题"><a href="#测试子标题" class="headerlink" title="测试子标题"></a>测试子标题</h3>]]></content>
     
     
+    <categories>
+      
+      <category>测试</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Hexo</tag>
+      
+      <tag>测试</tag>
+      
+    </tags>
     
   </entry>
   
