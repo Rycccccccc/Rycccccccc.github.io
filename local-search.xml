@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>个人博客搭建记录</title>
+    <link href="/2020/07/07/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/"/>
+    <url>/2020/07/07/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</url>
+    
+    <content type="html"><![CDATA[<h3 id="博客搭建的大致分为步"><a href="#博客搭建的大致分为步" class="headerlink" title="博客搭建的大致分为步"></a>博客搭建的大致分为步</h3><ul><li>安装hexo、node.js 、git</li><li>创建github账号、新建仓库</li><li>选择hexo主题, 修改相应的配置项</li></ul><h3 id="第1步：-安装hexo、node-js-、git"><a href="#第1步：-安装hexo、node-js-、git" class="headerlink" title="第1步： 安装hexo、node.js 、git"></a>第1步： 安装hexo、node.js 、git</h3><h3 id="第2步：-创建github账号、新建仓库"><a href="#第2步：-创建github账号、新建仓库" class="headerlink" title="第2步： 创建github账号、新建仓库"></a>第2步： 创建github账号、新建仓库</h3><h3 id="第3步：-选择hexo主题-修改相应的配置项"><a href="#第3步：-选择hexo主题-修改相应的配置项" class="headerlink" title="第3步： 选择hexo主题, 修改相应的配置项"></a>第3步： 选择hexo主题, 修改相应的配置项</h3>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2020-07-07 首次体验</title>
     <link href="/2020/07/07/2020-07-07-%E6%B5%8B%E8%AF%95/"/>
     <url>/2020/07/07/2020-07-07-%E6%B5%8B%E8%AF%95/</url>
