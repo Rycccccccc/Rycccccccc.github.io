@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title>OpenGL 专业名称解析</title>
-    <link href="/2020/08/20/OpenGL%20%E4%B8%93%E4%B8%9A%E5%90%8D%E7%A7%B0%E8%A7%A3%E6%9E%90/"/>
-    <url>/2020/08/20/OpenGL%20%E4%B8%93%E4%B8%9A%E5%90%8D%E7%A7%B0%E8%A7%A3%E6%9E%90/</url>
+    <title>01、OpenGL 专业名称解析</title>
+    <link href="/2020/08/20/01%20OpenGL%20%E4%B8%93%E4%B8%9A%E5%90%8D%E7%A7%B0%E8%A7%A3%E6%9E%90/"/>
+    <url>/2020/08/20/01%20OpenGL%20%E4%B8%93%E4%B8%9A%E5%90%8D%E7%A7%B0%E8%A7%A3%E6%9E%90/</url>
     
-    <content type="html"><![CDATA[<h3 id="01、-OpenGL-专业名称解析"><a href="#01、-OpenGL-专业名称解析" class="headerlink" title="01、 OpenGL 专业名称解析"></a>01、 OpenGL 专业名称解析</h3><p>###1管线</p><p>###2固定管线/存储着色器</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="1管线"><a href="#1管线" class="headerlink" title="1管线"></a>1管线</h3><h3 id="2固定管线-存储着色器"><a href="#2固定管线-存储着色器" class="headerlink" title="2固定管线/存储着色器"></a>2固定管线/存储着色器</h3>]]></content>
     
     
     <categories>
