@@ -8,7 +8,7 @@
     <link href="/2020/08/22/01%20%E5%9B%BE%E5%BD%A2API%E7%AE%80%E4%BB%8B/"/>
     <url>/2020/08/22/01%20%E5%9B%BE%E5%BD%A2API%E7%AE%80%E4%BB%8B/</url>
     
-    <content type="html"><![CDATA[<h1 id="1、图形API简介"><a href="#1、图形API简介" class="headerlink" title="1、图形API简介"></a>1、图形API简介</h1><ul><li><p><strong>OpenGL(Open Graphics Library)</strong> 是⼀个跨编程语言、跨平台的编程图形程序接⼝，它将计算机的资源抽象称为⼀个<strong>OpenGL</strong>的对象，对这些资源的操作抽象为⼀个个<strong>OpenGL</strong>指令。<br>OpenGL主要针对PC图形图像渲染处理（MAC/Windows）</p></li><li><p><strong>OpenGL ES(OpenGL for Embedded Systems)</strong> 是<strong>OpenGL</strong> 三维图形API 的子集， 针对手机、PDA 和 游戏主机等嵌入式设备而设计，去除了许多不必要和性能较低的API 接口。<br>OpenGL ES 主要针对移动端（iOS/安卓）</p></li><li><p><strong>DirectX</strong> 是由很多API组成的， DirectX是属于Windows 上一个多媒体处理框架，不支持Windows 以外的平台，不属于跨平台框架。<br>按照性质分类： 显示部分，声音部分，输入部分和网络部分。</p></li><li><p><strong>Metal</strong> Apple 为游戏开发者推出了新的平台技术Metal , 该技术能够为 3D 图像提高 <strong>10倍</strong> 的渲染性能。 Metal 是 Apple 为了解决3D 渲染而推出的框架。</p></li></ul><p>OpenGL/OpenGL ES / Metal 在项目中解决问题的本质：就是利用GPU 芯片来高效渲染图形图像。</p><ol><li>OpenGL 和 OpenCV 的区别<br>OpenGL 用来渲染的（显示—&gt;位图）<br>OpenCV 用来识别的（人脸识别/身份识别/物体—&gt; OpenCV face++） —–&gt; 与人工智能结合</li></ol><hr><h1 id="2、图片API-目的是解决什么问题"><a href="#2、图片API-目的是解决什么问题" class="headerlink" title="2、图片API 目的是解决什么问题"></a>2、图片API 目的是解决什么问题</h1><p>简单来说就是实现图形的底层渲染。比如以下场景：</p><ul><li>游戏开发中，对于游戏场景、人物的渲染。</li><li>音视频开发中，对于视频编码后的数据渲染。</li><li>地图引擎，对于地图上数据渲染。</li><li>核心动画中，实现动画的绘制。</li><li>视频处理中，对于视频加上滤镜效果等。</li><li>图片处理，滤镜、特效等。</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="1、图形API简介"><a href="#1、图形API简介" class="headerlink" title="1、图形API简介"></a>1、图形API简介</h1><ul><li><p><strong>OpenGL(Open Graphics Library)</strong> 是⼀个跨编程语言、跨平台的编程图形程序接⼝，它将计算机的资源抽象称为⼀个<strong>OpenGL</strong>的对象，对这些资源的操作抽象为⼀个个<strong>OpenGL</strong>指令。<br>OpenGL主要针对PC图形图像渲染处理（MAC/Windows）</p></li><li><p><strong>OpenGL ES(OpenGL for Embedded Systems)</strong> 是<strong>OpenGL</strong> 三维图形API 的子集， 针对手机、PDA 和 游戏主机等嵌入式设备而设计，去除了许多不必要和性能较低的API 接口。<br>OpenGL ES 主要针对移动端（iOS/安卓）</p></li><li><p><strong>DirectX</strong> 是由很多API组成的， DirectX是属于Windows 上一个多媒体处理框架，不支持Windows 以外的平台，不属于跨平台框架。<br>按照性质分类： 显示部分，声音部分，输入部分和网络部分。</p></li><li><p><strong>Metal</strong> Apple 为游戏开发者推出了新的平台技术Metal , 该技术能够为 3D 图像提高 <strong>10倍</strong> 的渲染性能。 Metal 是 Apple 为了解决3D 渲染而推出的框架。</p></li></ul><p>OpenGL/OpenGL ES / Metal 在项目中解决问题的本质：就是利用GPU 芯片来高效渲染图形图像。</p><p>OpenGL 和 OpenCV 的区别<br>OpenGL 用来渲染的（显示—&gt;位图）<br>OpenCV 用来识别的（人脸识别/身份识别/物体—&gt; OpenCV face++） —–&gt; 与人工智能结合</p><hr><h1 id="2、图片API-目的是解决什么问题"><a href="#2、图片API-目的是解决什么问题" class="headerlink" title="2、图片API 目的是解决什么问题"></a>2、图片API 目的是解决什么问题</h1><p>简单来说就是实现图形的底层渲染。比如以下场景：</p><ul><li>游戏开发中，对于游戏场景、人物的渲染。</li><li>音视频开发中，对于视频编码后的数据渲染。</li><li>地图引擎，对于地图上数据渲染。</li><li>核心动画中，实现动画的绘制。</li><li>视频处理中，对于视频加上滤镜效果等。</li><li>图片处理，滤镜、特效等。</li></ul>]]></content>
     
     
     <categories>
@@ -46,60 +46,6 @@
     <tags>
       
       <tag>OpenGL</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>个人博客搭建记录</title>
-    <link href="/2020/07/07/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/"/>
-    <url>/2020/07/07/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</url>
-    
-    <content type="html"><![CDATA[<h3 id="博客搭建的大致分为三步"><a href="#博客搭建的大致分为三步" class="headerlink" title="博客搭建的大致分为三步"></a>博客搭建的大致分为三步</h3><ol><li>安装hexo、node.js 、git</li><li>创建github账号、新建仓库</li><li>选择hexo主题, 修改相应的配置项</li></ol><h3 id="第1步：-安装hexo、node-js-、git"><a href="#第1步：-安装hexo、node-js-、git" class="headerlink" title="第1步： 安装hexo、node.js 、git"></a>第1步： 安装hexo、node.js 、git</h3><h3 id="第2步：-创建github账号、新建仓库"><a href="#第2步：-创建github账号、新建仓库" class="headerlink" title="第2步： 创建github账号、新建仓库"></a>第2步： 创建github账号、新建仓库</h3><h3 id="第3步：-选择hexo主题-修改相应的配置项"><a href="#第3步：-选择hexo主题-修改相应的配置项" class="headerlink" title="第3步： 选择hexo主题, 修改相应的配置项"></a>第3步： 选择hexo主题, 修改相应的配置项</h3>]]></content>
-    
-    
-    <categories>
-      
-      <category>记录</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Hexo</tag>
-      
-      <tag>博客搭建</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>2020-07-07 首次体验</title>
-    <link href="/2020/07/07/2020-07-07-%E6%B5%8B%E8%AF%95/"/>
-    <url>/2020/07/07/2020-07-07-%E6%B5%8B%E8%AF%95/</url>
-    
-    <content type="html"><![CDATA[<h2 id="首页体验"><a href="#首页体验" class="headerlink" title="首页体验"></a>首页体验</h2><h2 id="测试标题"><a href="#测试标题" class="headerlink" title="测试标题"></a>测试标题</h2><h3 id="测试子标题"><a href="#测试子标题" class="headerlink" title="测试子标题"></a>测试子标题</h3>]]></content>
-    
-    
-    <categories>
-      
-      <category>测试</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Hexo</tag>
-      
-      <tag>测试</tag>
       
     </tags>
     
