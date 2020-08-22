@@ -164,7 +164,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      25 字
+      674 字
     </span>
   
 
@@ -174,7 +174,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      7
        分钟
     </span>
   
@@ -205,11 +205,39 @@
           <div class="post-content mx-auto" id="post">
             
             <article class="markdown-body">
-              <h1 id="1、OpenGl-两大宝书"><a href="#1、OpenGl-两大宝书" class="headerlink" title="1、OpenGl 两大宝书"></a>1、OpenGl 两大宝书</h1><ul>
+              <h1 id="0、OpenGl-两大宝书"><a href="#0、OpenGl-两大宝书" class="headerlink" title="0、OpenGl 两大宝书"></a>0、OpenGl 两大宝书</h1><ul>
 <li>红宝书</li>
 <li>蓝宝书<br>里面有很多经典案例，值得研究。<br><img src="https://raw.githubusercontent.com/Rycccccccc/Rycccccccc.github.io/master/img/OpenGL/OpenGL_Book.png" srcset="/img/loading.gif" alt="image"></li>
 </ul>
-
+<hr>
+<h1 id="1、OpenGL-上下文（context）"><a href="#1、OpenGL-上下文（context）" class="headerlink" title="1、OpenGL 上下文（context）"></a>1、OpenGL 上下文（context）</h1><ul>
+<li><p>在应用程序调用任何OpenGL 的指令之前，需要安排首先创建一个OpenGL的上下文。这个上下文是一个非常庞大的状态机，保存了OpenGL 中的各种状态，这也是OpenGl 指令执行的基础。</p>
+</li>
+<li><p>OpenGl 是一个面向过程的函数，本质上都是对OpenGL上下文这个庞大的状态机中的某个状态或者对象进行操作，当然得首先把这个对象设置为当前对象。因此，通过对OpenGL指令的封装，是可以将OpenGL的相关调用封装成一个面向对象的图形API的。</p>
+</li>
+<li><p>由于OpenGL上下文是一个巨大的状态机，切换上下文往往会产生较大的开销，但是不同的绘制模块，可能需要使用完全独立的状态管理。因为，可以在应用程序中分别创建多个不同的上下文，在不同线程中使用不同的上下文，上下文之间共享纹理、缓冲区等资源。这样的方案，会比反复切换上下文或者大量修改渲染状态，更加合理高效。</p>
+</li>
+</ul>
+<h1 id="2、OpenGL-状态机"><a href="#2、OpenGL-状态机" class="headerlink" title="2、OpenGL 状态机"></a>2、OpenGL 状态机</h1><ul>
+<li><p>状态机是理论上的一种机器。描述了一个对象在其生命周期内所经历的各种状态，状态间的转变，发生转变的动因，条件以及转变中所执行的活动。因此具有以下特点：</p>
+<ul>
+<li>有记忆功能，能记住当前的状态。</li>
+<li>可以接收输入，根据输入的内容和自己的原先状态，修改自己当前状态，并且可以有对应输出。</li>
+<li>当进入特殊状态（停机状态）的时候，便不再接收输入，停止工作。</li>
+</ul>
+</li>
+<li><p>类推到OpenGL 中来，可以这么理解：</p>
+<ul>
+<li>OpenGL可以记录自己的状态（比如当前使用的颜色，是否开启了混合功能等）</li>
+<li>OpenGL可以接收输入（当调用OpenGL函数的时候，实际上可以看出OpenGL在接收我们的输入，例如调用 <font color=red>glColor3f</font> ,则OpenGL 接收到这个输入后会修改自己的当前颜色这个状态）</li>
+<li>OpenGL可以进入停止状态，不再接收输入。在程序退出前，OpenGL总会先停止工作。</li>
+</ul>
+</li>
+</ul>
+<h1 id="3、渲染"><a href="#3、渲染" class="headerlink" title="3、渲染"></a>3、渲染</h1><ul>
+<li>将图形/图像数据转换成2D空间图像操作叫做渲染 <font color=red>Rendering</font><br>也就是将图片、按钮、视频 显示绘制到屏幕上的过程。 解码图片—&gt; 渲染。</li>
+</ul>
+<h1 id="4、顶点数组-VertexArray-和顶点缓冲区-VertexBuffer"><a href="#4、顶点数组-VertexArray-和顶点缓冲区-VertexBuffer" class="headerlink" title="4、顶点数组 VertexArray 和顶点缓冲区 VertexBuffer"></a>4、顶点数组 <font color=red>VertexArray</font> 和顶点缓冲区 <font color=red>VertexBuffer</font></h1><h1 id="5、"><a href="#5、" class="headerlink" title="5、"></a>5、</h1><h1 id="6、"><a href="#6、" class="headerlink" title="6、"></a>6、</h1>
             </article>
             <hr>
             <div>
