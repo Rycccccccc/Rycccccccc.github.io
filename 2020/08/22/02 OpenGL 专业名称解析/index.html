@@ -164,7 +164,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      674 字
+      2.1k 字
     </span>
   
 
@@ -174,7 +174,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      7
+      22
        分钟
     </span>
   
@@ -210,6 +210,11 @@
 <li>蓝宝书<br>里面有很多经典案例，值得研究。<br><img src="https://raw.githubusercontent.com/Rycccccccc/Rycccccccc.github.io/master/img/OpenGL/OpenGL_Book.png" srcset="/img/loading.gif" alt="image"></li>
 </ul>
 <hr>
+<h1 id="0、OpenGl-两大宝书-1"><a href="#0、OpenGl-两大宝书-1" class="headerlink" title="0、OpenGl 两大宝书"></a>0、OpenGl 两大宝书</h1><ul>
+<li>红宝书</li>
+<li>蓝宝书<br>里面有很多经典案例，值得研究。<br><img src="https://raw.githubusercontent.com/Rycccccccc/Rycccccccc.github.io/master/img/OpenGL/OpenGL_Book.png" srcset="/img/loading.gif" alt="image"></li>
+</ul>
+<hr>
 <h1 id="1、OpenGL-上下文（context）"><a href="#1、OpenGL-上下文（context）" class="headerlink" title="1、OpenGL 上下文（context）"></a>1、OpenGL 上下文（context）</h1><ul>
 <li><p>在应用程序调用任何OpenGL 的指令之前，需要安排首先创建一个OpenGL的上下文。这个上下文是一个非常庞大的状态机，保存了OpenGL 中的各种状态，这也是OpenGl 指令执行的基础。</p>
 </li>
@@ -237,7 +242,61 @@
 <h1 id="3、渲染"><a href="#3、渲染" class="headerlink" title="3、渲染"></a>3、渲染</h1><ul>
 <li>将图形/图像数据转换成2D空间图像操作叫做渲染 <font color=red>Rendering</font><br>也就是将图片、按钮、视频 显示绘制到屏幕上的过程。 解码图片—&gt; 渲染。</li>
 </ul>
-<h1 id="4、顶点数组-VertexArray-和顶点缓冲区-VertexBuffer"><a href="#4、顶点数组-VertexArray-和顶点缓冲区-VertexBuffer" class="headerlink" title="4、顶点数组 VertexArray 和顶点缓冲区 VertexBuffer"></a>4、顶点数组 <font color=red>VertexArray</font> 和顶点缓冲区 <font color=red>VertexBuffer</font></h1><h1 id="5、"><a href="#5、" class="headerlink" title="5、"></a>5、</h1><h1 id="6、"><a href="#6、" class="headerlink" title="6、"></a>6、</h1>
+<h1 id="4、顶点数组VertexArray-和-顶点缓冲区VertexBuffer"><a href="#4、顶点数组VertexArray-和-顶点缓冲区VertexBuffer" class="headerlink" title="4、顶点数组VertexArray 和 顶点缓冲区VertexBuffer"></a>4、顶点数组VertexArray 和 顶点缓冲区VertexBuffer</h1><ul>
+<li><p>画图一般是先画好图像的骨架，然后再往骨架里面填充颜色，这对于OpenGL 也是一样。顶点数据就是要画的图像的骨架，和现实中不同的是，OpenGL 中的图像都是由图元组成。在OpenGL ES中，有三种类型的图元：点、线、三角形。那这些顶点数据最终是存储在哪里的呢？开发者可以选择设定函数指针，在调用绘制方法的时候，直接由内存传入顶点数据，也就是说这部分数据之前是存储在内存当中的，被称为顶点数组。而性能更高的做法是，提前分配一块显存，将顶点数据预先传入到显存当中。这部分的显存，就被称为顶点缓冲区。</p>
+<p>顶点数据存放的位置区别：<br>顶点数组：顶点数据 —-&gt; 内存中<br>顶点缓存区：顶点数据 —-&gt; GPU 显存<br>位图：120x120像素的图片，转成位图大小：120x120xRGBA = 14400x4 位图（纹理）</p>
+</li>
+<li><p>顶点指的是我们在绘制一个图形时，它的顶点位置数据，而这个数据可以直接存储在数组中或者将其缓存到GPU内存中。</p>
+</li>
+</ul>
+<h1 id="5、着色器渲染过程"><a href="#5、着色器渲染过程" class="headerlink" title="5、着色器渲染过程"></a>5、着色器渲染过程</h1><ul>
+<li>在渲染过程中，必须存储2种着色器，分别是顶点着色器和片元着色器。<ul>
+<li>顶点着色器是第一个着色器，处理顶点。</li>
+<li>片元着色器是最后一个，处理像素点颜色</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Rycccccccc/Rycccccccc.github.io/master/img/OpenGL/Rendering_flow.png" srcset="/img/loading.gif" alt="image"></p>
+<h1 id="6、着色器程序Shader"><a href="#6、着色器程序Shader" class="headerlink" title="6、着色器程序Shader"></a>6、着色器程序Shader</h1><ul>
+<li><p>就全面的将固定渲染管线架构变成了可编程渲染管线。因此，OpenGL 在实际调用绘制函数之前，还需要指定一个shader 编译成的着色器程序。常见的着色器主要有：</p>
+<ul>
+<li>顶点着色器（<font color=red>VertexShader</font>）</li>
+<li>片段着色器（<font color=red>FragmentShader</font>）</li>
+<li>像素着色器（<font color=red>PixelShader</font>）</li>
+<li>几何着色器（<font color=red>GeometryShader</font>）</li>
+<li>曲面细分着色器（<font color=red>TessellationShader</font>）<br>片段着色器和像素着色器只是在OpenGL和DX中的不同叫法而已。可惜的是直到OpenGLES 3.0 ，依然只支持了顶点着色器和片段着色器这两个最基础的着色器。</li>
+</ul>
+</li>
+<li><p>OpenGL 在处理shader 时，和其它编译器一样。通过编译、链接等步骤，生成了着色器程序（<font color=red>glProgram</font>）,着色器程序同时包含了顶点着色器和片段着色器的运算逻辑。在OpenGL 进行绘制的时候，首先由顶点着色器对传入的顶点数据进行运算。再通过图元装配，将顶点转换为图元。然后进行光栅化，将图元这种矢量图形，转换为栅格化数据。最后，将栅格化数据传入片段着色器中进行运算。片段着色器会对格栅化数据中的每一个像素进行运算，并决定像素的颜色。</p>
+</li>
+</ul>
+<h1 id="7、管线"><a href="#7、管线" class="headerlink" title="7、管线"></a>7、管线</h1><ul>
+<li>在OpenGL下渲染图形，就会有经历一个一个节点。而这样的操作可以理解管线。可以想象为流水线。每个任务类似流水线般执行，任务之间有先后顺序。管线是个抽象的概念，之所以称之为管线是因为显卡在处理数据的时候是按照一个固定的顺序来的，而且严格按照这个顺序。这个顺序不能打破的。</li>
+</ul>
+<h1 id="8、固定管线-存储着色器"><a href="#8、固定管线-存储着色器" class="headerlink" title="8、固定管线/存储着色器"></a>8、固定管线/存储着色器</h1><ul>
+<li><p>在早期的OpenGl 版本，它封装了很多种着色器程序块内置的一段包含了光照、坐标变换、裁剪等诸多功能的固定<strong>shader</strong> 程序来完成，来帮助开发者完成图形的渲染。而开发者只需要传入相应的参数，就能快速完成图形的渲染。类似于iOS 开发会封装很多API,而我们只需要调用，就可以实现功能。不需要关注底层实现原理。</p>
+</li>
+<li><p>但是由于OpenGL 的使用场景非常丰富，固定管线或存储着色器无法完成每一个业务，这时将相关部分开放可编程。</p>
+</li>
+</ul>
+<h1 id="9、顶点着色器-VertextShader"><a href="#9、顶点着色器-VertextShader" class="headerlink" title="9、顶点着色器 VertextShader"></a>9、顶点着色器 VertextShader</h1><ul>
+<li><p>一般用来处理图形每个顶点变换【旋转、平移、投影等】。</p>
+</li>
+<li><p>顶点着色器是OpenGl 中用于计算顶点属性的程序。顶点着色器是逐顶点运算的程序，也就是说每个顶点数据都会执行一次顶点着色器，当然这是并行的，并且顶点着色器运算过程中无法访问其他顶点的数据。</p>
+</li>
+<li><p>一般来说典型的需要计算的顶点属性主要包括顶点坐标变换、逐顶点光照运算等。顶点坐标由自身坐标系转换到归一化坐标系的运算，就是这这里发生的。</p>
+</li>
+</ul>
+<h1 id="10、片元着色器程序-FragmentShader"><a href="#10、片元着色器程序-FragmentShader" class="headerlink" title="10、片元着色器程序 FragmentShader"></a>10、片元着色器程序 FragmentShader</h1><ul>
+<li><p>一般用来处理图形中每个像素点颜色计算和填充。</p>
+</li>
+<li><p>片段着色器是OpenGL 中用于计算片段（像素）颜色的程序。片段着色器是逐像素运算的程序，也就是说每个像素都会执行一次片段着色器，当然也是并行的。</p>
+</li>
+</ul>
+<h1 id="11、GLSL-OpenGL-Shading-Language"><a href="#11、GLSL-OpenGL-Shading-Language" class="headerlink" title="11、GLSL (OpenGL Shading Language)"></a>11、GLSL (OpenGL Shading Language)</h1><ul>
+<li>OpenGL 着色语言（OpenGL Shading Language）是用来在OpenGL 中着色编程的语音，也即开发人员写的短小的自定义程序，他们在图形卡的GPU（Graphic Processor Unit 图形处理单元）上执行，代替了固定的渲染管线的一部分，使渲染管线中不同层次具有可编程性。比如：视图转换、投影转换等。 GLSL(GL Shading Language)的着色器代码分成2个部分：顶点着色器（<font color=red>VertexShader</font>）和片元着色器（<font color=red>FragmentShader</font>）</li>
+</ul>
+
             </article>
             <hr>
             <div>
