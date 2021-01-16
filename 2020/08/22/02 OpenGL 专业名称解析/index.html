@@ -48,7 +48,11 @@
 
 
   <script  src="/js/utils.js" ></script>
-<meta name="generator" content="Hexo 4.2.1"></head>
+<meta name="generator" content="Hexo 4.2.1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
 
 
 <body>
@@ -229,13 +233,13 @@
 <li><p>类推到OpenGL 中来，可以这么理解：</p>
 <ul>
 <li>OpenGL可以记录自己的状态（比如当前使用的颜色，是否开启了混合功能等）</li>
-<li>OpenGL可以接收输入（当调用OpenGL函数的时候，实际上可以看出OpenGL在接收我们的输入，例如调用 <font color=red>glColor3f</font> ,则OpenGL 接收到这个输入后会修改自己的当前颜色这个状态）</li>
+<li>OpenGL可以接收输入（当调用OpenGL函数的时候，实际上可以看出OpenGL在接收我们的输入，例如调用 <font color="red">glColor3f</font> ,则OpenGL 接收到这个输入后会修改自己的当前颜色这个状态）</li>
 <li>OpenGL可以进入停止状态，不再接收输入。在程序退出前，OpenGL总会先停止工作。</li>
 </ul>
 </li>
 </ul>
 <h1 id="3、渲染"><a href="#3、渲染" class="headerlink" title="3、渲染"></a>3、渲染</h1><ul>
-<li>将图形/图像数据转换成2D空间图像操作叫做渲染 <font color=red>Rendering</font><br>也就是将图片、按钮、视频 显示绘制到屏幕上的过程。 解码图片—&gt; 渲染。</li>
+<li>将图形/图像数据转换成2D空间图像操作叫做渲染 <font color="red">Rendering</font><br>也就是将图片、按钮、视频 显示绘制到屏幕上的过程。 解码图片—&gt; 渲染。</li>
 </ul>
 <h1 id="4、顶点数组VertexArray-和-顶点缓冲区VertexBuffer"><a href="#4、顶点数组VertexArray-和-顶点缓冲区VertexBuffer" class="headerlink" title="4、顶点数组VertexArray 和 顶点缓冲区VertexBuffer"></a>4、顶点数组VertexArray 和 顶点缓冲区VertexBuffer</h1><ul>
 <li><p>画图一般是先画好图像的骨架，然后再往骨架里面填充颜色，这对于OpenGL 也是一样。顶点数据就是要画的图像的骨架，和现实中不同的是，OpenGL 中的图像都是由图元组成。在OpenGL ES中，有三种类型的图元：点、线、三角形。那这些顶点数据最终是存储在哪里的呢？开发者可以选择设定函数指针，在调用绘制方法的时候，直接由内存传入顶点数据，也就是说这部分数据之前是存储在内存当中的，被称为顶点数组。而性能更高的做法是，提前分配一块显存，将顶点数据预先传入到显存当中。这部分的显存，就被称为顶点缓冲区。</p>
@@ -255,23 +259,23 @@
 <h1 id="6、着色器程序Shader"><a href="#6、着色器程序Shader" class="headerlink" title="6、着色器程序Shader"></a>6、着色器程序Shader</h1><ul>
 <li><p>就全面的将固定渲染管线架构变成了可编程渲染管线。因此，OpenGL 在实际调用绘制函数之前，还需要指定一个shader 编译成的着色器程序。常见的着色器主要有：</p>
 <ul>
-<li>顶点着色器（<font color=red>VertexShader</font>）<ul>
+<li>顶点着色器（<font color="red">VertexShader</font>）<ul>
 <li>作用1：确定位置，</li>
 <li>作用2：缩放、平移、旋转位置换算，</li>
 <li>作用3：手机端显示3D 手机屏幕实际为2D，3D图形数据进行2D（投影换算）</li>
 </ul>
 </li>
-<li>片元着色器（<font color=red>FragmentShader</font>）<ul>
+<li>片元着色器（<font color="red">FragmentShader</font>）<ul>
 <li>也叫做像素着色器：处理一个一个的像素点。</li>
 <li>如果进行图片的饱和度调整，也是需要在这个着色器修改。</li>
 </ul>
 </li>
-<li>像素着色器（<font color=red>PixelShader</font>）</li>
-<li>几何着色器（<font color=red>GeometryShader</font>）</li>
-<li>曲面细分着色器（<font color=red>TessellationShader</font>）<br>片段着色器和像素着色器只是在OpenGL和DX中的不同叫法而已。可惜的是直到OpenGLES 3.0 ，依然只支持了顶点着色器和片段着色器这两个最基础的着色器。</li>
+<li>像素着色器（<font color="red">PixelShader</font>）</li>
+<li>几何着色器（<font color="red">GeometryShader</font>）</li>
+<li>曲面细分着色器（<font color="red">TessellationShader</font>）<br>片段着色器和像素着色器只是在OpenGL和DX中的不同叫法而已。可惜的是直到OpenGLES 3.0 ，依然只支持了顶点着色器和片段着色器这两个最基础的着色器。</li>
 </ul>
 </li>
-<li><p>OpenGL 在处理shader 时，和其它编译器一样。通过编译、链接等步骤，生成了着色器程序（<font color=red>glProgram</font>）,着色器程序同时包含了顶点着色器和片段着色器的运算逻辑。在OpenGL 进行绘制的时候，首先由顶点着色器对传入的顶点数据进行运算。再通过图元装配，将顶点转换为图元。然后进行光栅化，将图元这种矢量图形，转换为栅格化数据。最后，将栅格化数据传入片段着色器中进行运算。片段着色器会对格栅化数据中的每一个像素进行运算，并决定像素的颜色。</p>
+<li><p>OpenGL 在处理shader 时，和其它编译器一样。通过编译、链接等步骤，生成了着色器程序（<font color="red">glProgram</font>）,着色器程序同时包含了顶点着色器和片段着色器的运算逻辑。在OpenGL 进行绘制的时候，首先由顶点着色器对传入的顶点数据进行运算。再通过图元装配，将顶点转换为图元。然后进行光栅化，将图元这种矢量图形，转换为栅格化数据。最后，将栅格化数据传入片段着色器中进行运算。片段着色器会对格栅化数据中的每一个像素进行运算，并决定像素的颜色。</p>
 </li>
 </ul>
 <h1 id="7、管线"><a href="#7、管线" class="headerlink" title="7、管线"></a>7、管线</h1><ul>
@@ -297,7 +301,7 @@
 <li>片元着色器是OpenGL 中用于计算片段（像素）颜色的程序。片段着色器是逐像素运算的程序，也就是说每个像素都会执行一次片段着色器，当然也是并行的。</li>
 </ul>
 <h1 id="11、GLSL-OpenGL-Shading-Language"><a href="#11、GLSL-OpenGL-Shading-Language" class="headerlink" title="11、GLSL (OpenGL Shading Language)"></a>11、GLSL (OpenGL Shading Language)</h1><ul>
-<li>OpenGL 着色语言（OpenGL Shading Language）是用来在OpenGL 中着色编程的语音，也即开发人员写的短小的自定义程序，他们在图形卡的GPU（Graphic Processor Unit 图形处理单元）上执行，代替了固定的渲染管线的一部分，使渲染管线中不同层次具有可编程性。比如：视图转换、投影转换等。 GLSL(GL Shading Language)的着色器代码分成2个部分：顶点着色器（<font color=red>VertexShader</font>）和片元着色器（<font color=red>FragmentShader</font>）</li>
+<li>OpenGL 着色语言（OpenGL Shading Language）是用来在OpenGL 中着色编程的语音，也即开发人员写的短小的自定义程序，他们在图形卡的GPU（Graphic Processor Unit 图形处理单元）上执行，代替了固定的渲染管线的一部分，使渲染管线中不同层次具有可编程性。比如：视图转换、投影转换等。 GLSL(GL Shading Language)的着色器代码分成2个部分：顶点着色器（<font color="red">VertexShader</font>）和片元着色器（<font color="red">FragmentShader</font>）</li>
 </ul>
 <h1 id="12、光栅化-Rasterization-不可编程"><a href="#12、光栅化-Rasterization-不可编程" class="headerlink" title="12、光栅化 Rasterization 不可编程"></a>12、光栅化 Rasterization 不可编程</h1><ul>
 <li><p>是把顶点数据转换为片元的过程，具有将图转化一个个栅格组成的图像的作用。</p>
