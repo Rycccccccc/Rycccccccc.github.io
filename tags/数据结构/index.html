@@ -17,20 +17,10 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="keywords" content="">
-  <title>数据结构/01 复杂度 - Rycccccccc</title>
+  <title>标签 - 数据结构 - Rycccccccc</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
-
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
-  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
-
-  
-    
-    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
-  
-
-  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -56,7 +46,7 @@
 
 
 <body>
-  <header style="height: 70vh;">
+  <header style="height: 80vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -154,40 +144,6 @@
             </span>
 
             
-              
-  <div class="mt-3 post-meta">
-    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-    <time datetime="2021-04-03 10:35">
-      2021年4月3日 上午
-    </time>
-  </div>
-
-
-<div class="mt-1">
-  
-    
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-chart"></i>
-      334 字
-    </span>
-  
-
-  
-    
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-clock-fill"></i>
-      
-      
-      4
-       分钟
-    </span>
-  
-
-  
-  
-</div>
-
-            
           </div>
 
           
@@ -198,142 +154,37 @@
 
   <main>
     
+      <div class="container nopadding-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<div class="list-group">
+  <p class="h4">共计 1 篇文章</p>
+  <hr>
+  
+    
       
+      <p class="h5">2020</p>
+    
+    <a href="/2020/08/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/01%20%E5%A4%8D%E6%9D%82%E5%BA%A6/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">01、复杂度</span>
+      <span style="float: right;">08-22</span>
+    </a>
+  
+</div>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="d-none d-lg-block col-lg-2"></div>
-    <div class="col-lg-8 nopadding-md">
-      <div class="container nopadding-md" id="board-ctn">
-        <div class="py-5" id="board">
-          <div class="post-content mx-auto" id="post">
-            
-            <article class="markdown-body">
-              <h1 id="01-复杂度"><a href="#01-复杂度" class="headerlink" title="01 复杂度"></a>01 复杂度</h1><pre><code>---
-title: 01、图形API简介
-date: 2020-08-22 
-tags: [OpenGL]
-categories:
-- OpenGL
-index_img: /img/OpenGL/gl_logo.png
----</code></pre><h2 id="1、什么是算法"><a href="#1、什么是算法" class="headerlink" title="1、什么是算法"></a>1、什么是算法</h2><ul>
-<li>算法是用来解决特定问题的一系列的执行步骤</li>
-<li>使用不同的算法，解决同一个问题，效率可能相差非常大</li>
-</ul>
-<h2 id="2、如何判断一个算法的好坏"><a href="#2、如何判断一个算法的好坏" class="headerlink" title="2、如何判断一个算法的好坏"></a>2、如何判断一个算法的好坏</h2><ul>
-<li>正确性、可读性、健壮性（对不合理输入的反应能力和处理能力）</li>
-<li>时间复杂度（time complexity） : 估算程序指令的执行次数（执行时间）</li>
-<li>空间复杂度（space complexity）: 估算所需占用的存储空间</li>
-<li><h2 id="3、大O-表示法（Big-O）"><a href="#3、大O-表示法（Big-O）" class="headerlink" title="3、大O 表示法（Big O）"></a>3、大O 表示法（Big O）</h2></li>
-<li>一般用大O表示法来描述复杂度，它表示的是数据规模n 对应的复杂度</li>
-<li>忽略常数、系数、低阶<ul>
-<li>9 &gt;&gt; O(1)</li>
-<li>2n + 3 &gt;&gt; O(n)</li>
-<li>n^2 + 2n + 6 &gt;&gt; O(n^2)</li>
-<li>4n^3 + 2n^2 + 6 &gt;&gt; O(n^3)</li>
-</ul>
-</li>
-<li>注意： 大O表示法仅仅是一种粗略的分析模型，是一种估算，能帮助我们短时间了解一个算法的执行效率</li>
-</ul>
-<h2 id="4、对数阶的细节"><a href="#4、对数阶的细节" class="headerlink" title="4、对数阶的细节"></a>4、对数阶的细节</h2><ul>
-<li>对数阶一般忽略底数 $log_2{n}$ = $log_2{9}$ * $log_9{n}$</li>
-<li>所以 $log_2{n}$  、 $log_2{9}$ 统称为 $log_{n}$</li>
-</ul>
-<h2 id="5、常见的复杂度"><a href="#5、常见的复杂度" class="headerlink" title="5、常见的复杂度"></a>5、常见的复杂度</h2><table>
-<thead>
-<tr>
-<th align="center">执行次数</th>
-<th align="center">复杂度</th>
-<th align="center">非正式术语</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">12</td>
-<td align="center">O(1)</td>
-<td align="center">常数阶</td>
-</tr>
-<tr>
-<td align="center">2n + 3</td>
-<td align="center">O(n)</td>
-<td align="center">线性阶</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-</tbody></table>
 
-            </article>
-            <hr>
-            <div>
-              <div class="post-metas mb-3">
-                
-                
+
               </div>
-              
-                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
-              
-              
-                <div class="post-prevnext row">
-                  <div class="post-prev col-6">
-                    
-                    
-                  </div>
-                  <div class="post-next col-6">
-                    
-                    
-                      <a href="/2021/04/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/02%20%E5%A4%8D%E6%9D%82/">
-                        <span class="hidden-mobile">数据结构/02 复杂</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </div>
-                </div>
-              
             </div>
-
-            
           </div>
         </div>
       </div>
-    </div>
-    
-      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
-        <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
-  <div id="tocbot"></div>
-</div>
-
-      </div>
-    
-  </div>
-</div>
-
-<!-- Custom -->
-
-
     
   </main>
 
@@ -571,10 +422,10 @@ index_img: /img/OpenGL/gl_logo.png
       }
 
       // 如果是文章，请求文章的浏览数，并自增
-      if ('true' === 'true') {
+      if ('false' === 'true') {
         var viewCtn = document.querySelector('#leancloud-post-views-container');
         if (viewCtn || enableIncr) {
-          var target = decodeURI('/2021/04/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/01%20%E5%A4%8D%E6%9D%82%E5%BA%A6/');
+          var target = decodeURI('/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.html');
           var viewGetter = getRecord(Counter, target).then((record) => {
             incrArr.push(buildIncrement(record.objectId))
             if (viewCtn) {
@@ -636,31 +487,6 @@ index_img: /img/OpenGL/gl_logo.png
 
 
 
-  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
-  <script>
-    $(document).ready(function () {
-      var boardCtn = $('#board-ctn');
-      var boardTop = boardCtn.offset().top;
-
-      tocbot.init({
-        tocSelector: '#tocbot',
-        contentSelector: 'article.markdown-body',
-        headingSelector: 'h1,h2,h3,h4,h5,h6',
-        linkClass: 'tocbot-link',
-        activeLinkClass: 'tocbot-active-link',
-        listClass: 'tocbot-list',
-        isCollapsedClass: 'tocbot-is-collapsed',
-        collapsibleClass: 'tocbot-is-collapsible',
-        collapseDepth: 0,
-        scrollSmooth: true,
-        headingsOffset: -boardTop
-      });
-      if ($('.toc-list-item').length > 0) {
-        $('#toc').css('visibility', 'visible');
-      }
-    });
-  </script>
-
 
 
   <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
@@ -668,7 +494,7 @@ index_img: /img/OpenGL/gl_logo.png
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "数据结构/01 复杂度&nbsp;",
+        "标签 - 数据结构&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
@@ -683,21 +509,6 @@ index_img: /img/OpenGL/gl_logo.png
 
 
 
-  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
-  <script>
-    anchors.options = {
-      placement: "right",
-      visible: "hover",
-      
-    };
-    var el = "h1,h2,h3,h4,h5,h6".split(",");
-    var res = [];
-    for (item of el) {
-      res.push(".markdown-body > " + item)
-    }
-    anchors.add(res.join(", "))
-  </script>
-
 
 
   <script  src="/js/local-search.js" ></script>
@@ -711,20 +522,6 @@ index_img: /img/OpenGL/gl_logo.png
   </script>
 
 
-
-  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
-
-  <script>
-    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
-      function () {
-        var element = document.createElement('a');
-        $(element).attr('data-fancybox', 'images');
-        $(element).attr('href', $(this).attr('src'));
-        $(this).wrap(element);
-      }
-    );
-  </script>
 
 
 
