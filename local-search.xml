@@ -29,31 +29,6 @@
   
   
   <entry>
-    <title>01、复杂度</title>
-    <link href="/2020/08/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/01%20%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
-    <url>/2020/08/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/01%20%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
-    
-    <content type="html"><![CDATA[<h2 id="1、什么是算法"><a href="#1、什么是算法" class="headerlink" title="1、什么是算法"></a>1、什么是算法</h2><ul><li>算法是用来解决特定问题的一系列的执行步骤</li><li>使用不同的算法，解决同一个问题，效率可能相差非常大</li></ul><h2 id="2、如何判断一个算法的好坏"><a href="#2、如何判断一个算法的好坏" class="headerlink" title="2、如何判断一个算法的好坏"></a>2、如何判断一个算法的好坏</h2><ul><li>正确性、可读性、健壮性（对不合理输入的反应能力和处理能力）</li><li>时间复杂度（time complexity） : 估算程序指令的执行次数（执行时间）</li><li>空间复杂度（space complexity）: 估算所需占用的存储空间</li><li><h2 id="3、大O-表示法（Big-O）"><a href="#3、大O-表示法（Big-O）" class="headerlink" title="3、大O 表示法（Big O）"></a>3、大O 表示法（Big O）</h2></li><li>一般用大O表示法来描述复杂度，它表示的是数据规模n 对应的复杂度</li><li>忽略常数、系数、低阶<ul><li>9 &gt;&gt; O(1)</li><li>2n + 3 &gt;&gt; O(n)</li><li>n^2 + 2n + 6 &gt;&gt; O(n^2)</li><li>4n^3 + 2n^2 + 6 &gt;&gt; O(n^3)</li></ul></li><li>注意： 大O表示法仅仅是一种粗略的分析模型，是一种估算，能帮助我们短时间了解一个算法的执行效率</li></ul><h2 id="4、对数阶的细节"><a href="#4、对数阶的细节" class="headerlink" title="4、对数阶的细节"></a>4、对数阶的细节</h2><ul><li>对数阶一般忽略底数 $log_2{n}$ = $log_2{9}$ * $log_9{n}$</li><li>所以 $log_2{n}$  、 $log_2{9}$ 统称为 $log_{n}$</li></ul><h2 id="5、常见的复杂度"><a href="#5、常见的复杂度" class="headerlink" title="5、常见的复杂度"></a>5、常见的复杂度</h2><table><thead><tr><th align="center">执行次数</th><th align="center">复杂度</th><th align="center">非正式术语</th></tr></thead><tbody><tr><td align="center">12</td><td align="center">O(1)</td><td align="center">常数阶</td></tr><tr><td align="center">2n + 3</td><td align="center">O(n)</td><td align="center">线性阶</td></tr><tr><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td><td align="center"></td></tr></tbody></table>]]></content>
-    
-    
-    <categories>
-      
-      <category>数据结构</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>数据结构</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>02、OpenGL专业名称解析</title>
     <link href="/2020/08/22/OpenGL/02%20OpenGL%20%E4%B8%93%E4%B8%9A%E5%90%8D%E7%A7%B0%E8%A7%A3%E6%9E%90/"/>
     <url>/2020/08/22/OpenGL/02%20OpenGL%20%E4%B8%93%E4%B8%9A%E5%90%8D%E7%A7%B0%E8%A7%A3%E6%9E%90/</url>
@@ -71,6 +46,31 @@
     <tags>
       
       <tag>OpenGL</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>01、复杂度</title>
+    <link href="/2020/08/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/01%20%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
+    <url>/2020/08/22/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/01%20%E5%A4%8D%E6%9D%82%E5%BA%A6/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1、什么是算法"><a href="#1、什么是算法" class="headerlink" title="1、什么是算法"></a>1、什么是算法</h2><ul><li>算法是用来解决特定问题的一系列的执行步骤</li><li>使用不同的算法，解决同一个问题，效率可能相差非常大</li></ul><h2 id="2、如何判断一个算法的好坏"><a href="#2、如何判断一个算法的好坏" class="headerlink" title="2、如何判断一个算法的好坏"></a>2、如何判断一个算法的好坏</h2><ul><li>正确性、可读性、健壮性（对不合理输入的反应能力和处理能力）</li><li>时间复杂度（time complexity） : 估算程序指令的执行次数（执行时间）</li><li>空间复杂度（space complexity）: 估算所需占用的存储空间</li><li><h2 id="3、大O-表示法（Big-O）"><a href="#3、大O-表示法（Big-O）" class="headerlink" title="3、大O 表示法（Big O）"></a>3、大O 表示法（Big O）</h2></li><li>一般用大O表示法来描述复杂度，它表示的是数据规模n 对应的复杂度</li><li>忽略常数、系数、低阶<ul><li>9 &gt;&gt; O(1)</li><li>2n + 3 &gt;&gt; O(n)</li><li>n^2 + 2n + 6 &gt;&gt; O(n^2)</li><li>4n^3 + 2n^2 + 6 &gt;&gt; O(n^3)</li></ul></li><li>注意： 大O表示法仅仅是一种粗略的分析模型，是一种估算，能帮助我们短时间了解一个算法的执行效率</li></ul><h2 id="4、对数阶的细节"><a href="#4、对数阶的细节" class="headerlink" title="4、对数阶的细节"></a>4、对数阶的细节</h2><ul><li>对数阶一般忽略底数 $log_2{n}$ = $log_2{9}$ * $log_9{n}$</li><li>所以 $log_2{n}$  、 $log_2{9}$ 统称为 $log_{n}$</li></ul><h2 id="5、常见的复杂度"><a href="#5、常见的复杂度" class="headerlink" title="5、常见的复杂度"></a>5、常见的复杂度</h2><table><thead><tr><th align="center">执行次数</th><th align="center">复杂度</th><th align="center">非正式术语</th></tr></thead><tbody><tr><td align="center">12</td><td align="center">O(1)</td><td align="center">常数阶</td></tr><tr><td align="center">2n + 3</td><td align="center">O(n)</td><td align="center">线性阶</td></tr><tr><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td><td align="center"></td></tr></tbody></table>]]></content>
+    
+    
+    <categories>
+      
+      <category>数据结构</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>数据结构</tag>
       
     </tags>
     
