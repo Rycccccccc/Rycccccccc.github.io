@@ -168,7 +168,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      471 字
+      450 字
     </span>
   
 
@@ -178,7 +178,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      6
+      5
        分钟
     </span>
   
@@ -209,8 +209,7 @@
           <div class="post-content mx-auto" id="post">
             
             <article class="markdown-body">
-              <h2 id="1、什么是算法"><a href="#1、什么是算法" class="headerlink" title="1、什么是算法"></a>1、什么是算法</h2><p>log<sub>2</sub>10<br>2<sup>2</sup></p>
-<ul>
+              <h2 id="1、什么是算法"><a href="#1、什么是算法" class="headerlink" title="1、什么是算法"></a>1、什么是算法</h2><ul>
 <li>算法是用来解决特定问题的一系列的执行步骤</li>
 <li>使用不同的算法，解决同一个问题，效率可能相差非常大</li>
 </ul>
@@ -233,7 +232,9 @@
 <li>对数阶一般忽略底数 $log_2{n}$ = $log_2{9}$ * $log_9{n}$</li>
 <li>所以 $log_2{n}$  、 $log_2{9}$ 统称为 $log_{n}$</li>
 </ul>
-<h2 id="5、常见的复杂度"><a href="#5、常见的复杂度" class="headerlink" title="5、常见的复杂度"></a>5、常见的复杂度</h2><table>
+<h2 id="5、常见的复杂度"><a href="#5、常见的复杂度" class="headerlink" title="5、常见的复杂度"></a>5、常见的复杂度</h2><!-- 下标 <sub>x</sub> 上标<sup>x</sup>  -->
+
+<table>
 <thead>
 <tr>
 <th align="center">执行次数</th>
@@ -253,31 +254,31 @@
 </tr>
 <tr>
 <td align="center">4n^2 + 2n + 6</td>
-<td align="center">O(n^2)</td>
+<td align="center">O(n<sup>2</sup>)</td>
 <td align="center">平方阶</td>
 </tr>
 <tr>
-<td align="center">4$log_2{n}$ + 25</td>
-<td align="center">O($log{n}$)</td>
+<td align="center">4log<sub>2</sub>n + 25</td>
+<td align="center">O(logn)</td>
 <td align="center">对数阶</td>
 </tr>
 <tr>
-<td align="center">2n + 2n$log_3{n}$ + 25</td>
-<td align="center">O(n$log{n}$)</td>
-<td align="center">n$log{n}$阶</td>
+<td align="center">2n + 2nlog<sub>2</sub>n + 25</td>
+<td align="center">O(nlogn)</td>
+<td align="center">nlogn阶</td>
 </tr>
 <tr>
-<td align="center">n^3 + n^2 + n</td>
-<td align="center">O(n^3)</td>
+<td align="center">n<sup>3</sup> + n<sup>2</sup> + n</td>
+<td align="center">O(n<sup>3</sup>)</td>
 <td align="center">立方阶</td>
 </tr>
 <tr>
 <td align="center">2^n</td>
-<td align="center">O(2^n)</td>
+<td align="center">O(2<sup>n</sup>)</td>
 <td align="center">指数阶</td>
 </tr>
 </tbody></table>
-<p>O(1) &lt; O($log{n}$)  &lt; O(n) &lt;  O(n$log{n}$) &lt; O(n^2) &lt; O(n^3) &lt; O(2^n) &lt; O(n!) &lt; O(n^n)</p>
+<p>O(1) &lt; O(logn)  &lt; O(n) &lt;  O(nlogn) &lt; O(n<sup>2</sup>) &lt; O(n<sup>3</sup>) &lt; O(2<sup>n</sup>) &lt; O(n!) &lt; O(n^n)</p>
 <h2 id="6、算法的优化方向"><a href="#6、算法的优化方向" class="headerlink" title="6、算法的优化方向"></a>6、算法的优化方向</h2><ul>
 <li>用尽量少的存储空间</li>
 <li>用尽量少的执行步骤（执行时间）</li>
@@ -328,8 +329,8 @@
                   <div class="post-next col-6">
                     
                     
-                      <a href="/2020/08/22/OpenGL/01%20%E5%9B%BE%E5%BD%A2API%E7%AE%80%E4%BB%8B/">
-                        <span class="hidden-mobile">01、图形API简介</span>
+                      <a href="/2020/08/22/OpenGL/02%20OpenGL%20%E4%B8%93%E4%B8%9A%E5%90%8D%E7%A7%B0%E8%A7%A3%E6%9E%90/">
+                        <span class="hidden-mobile">02、OpenGL专业名称解析</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
