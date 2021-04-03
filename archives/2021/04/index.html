@@ -17,20 +17,10 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="keywords" content="">
-  <title>01、图形API简介 - Rycccccccc</title>
+  <title>归档 - Rycccccccc</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
-
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
-  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
-
-  
-    
-    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
-  
-
-  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -56,7 +46,7 @@
 
 
 <body>
-  <header style="height: 70vh;">
+  <header style="height: 60vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -154,40 +144,6 @@
             </span>
 
             
-              
-  <div class="mt-3 post-meta">
-    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-    <time datetime="2020-08-22 00:00">
-      2020年8月22日 凌晨
-    </time>
-  </div>
-
-
-<div class="mt-1">
-  
-    
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-chart"></i>
-      448 字
-    </span>
-  
-
-  
-    
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-clock-fill"></i>
-      
-      
-      5
-       分钟
-    </span>
-  
-
-  
-  
-</div>
-
-            
           </div>
 
           
@@ -198,104 +154,37 @@
 
   <main>
     
+      <div class="container nopadding-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<div class="list-group">
+  <p class="h4">共计 3 篇文章</p>
+  <hr>
+  
+    
       
+      <p class="h5">2021</p>
+    
+    <a href="/2021/04/01/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/01%20%E5%A4%8D%E6%9D%82%E5%BA%A6/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">01、复杂度</span>
+      <span style="float: right;">04-01</span>
+    </a>
+  
+</div>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="d-none d-lg-block col-lg-2"></div>
-    <div class="col-lg-8 nopadding-md">
-      <div class="container nopadding-md" id="board-ctn">
-        <div class="py-5" id="board">
-          <div class="post-content mx-auto" id="post">
-            
-            <article class="markdown-body">
-              <h1 id="1、图形API简介"><a href="#1、图形API简介" class="headerlink" title="1、图形API简介"></a>1、图形API简介</h1><ul>
-<li><p><strong>OpenGL(Open Graphics Library)</strong> 是⼀个跨编程语言、跨平台的编程图形程序接⼝，它将计算机的资源抽象称为⼀个<strong>OpenGL</strong>的对象，对这些资源的操作抽象为⼀个个<strong>OpenGL</strong>指令。<br>OpenGL主要针对PC图形图像渲染处理（MAC/Windows）</p>
-</li>
-<li><p><strong>OpenGL ES(OpenGL for Embedded Systems)</strong> 是<strong>OpenGL</strong> 三维图形API 的子集， 针对手机、PDA 和 游戏主机等嵌入式设备而设计，去除了许多不必要和性能较低的API 接口。<br>OpenGL ES 主要针对移动端（iOS/安卓）</p>
-</li>
-<li><p><strong>DirectX</strong> 是由很多API组成的， DirectX是属于Windows 上一个多媒体处理框架，不支持Windows 以外的平台，不属于跨平台框架。<br>按照性质分类： 显示部分，声音部分，输入部分和网络部分。</p>
-</li>
-<li><p><strong>Metal</strong> Apple 为游戏开发者推出了新的平台技术Metal , 该技术能够为 3D 图像提高 <strong>10倍</strong> 的渲染性能。 Metal 是 Apple 为了解决3D 渲染而推出的框架。</p>
-</li>
-</ul>
-<p>OpenGL/OpenGL ES / Metal 在项目中解决问题的本质：就是利用GPU 芯片来高效渲染图形图像。</p>
-<p>OpenGL 和 OpenCV 的区别<br>OpenGL 用来渲染的（显示—&gt;位图）<br>OpenCV 用来识别的（人脸识别/身份识别/物体—&gt; OpenCV face++） —–&gt; 与人工智能结合</p>
-<hr>
-<h1 id="2、图片API-目的是解决什么问题"><a href="#2、图片API-目的是解决什么问题" class="headerlink" title="2、图片API 目的是解决什么问题"></a>2、图片API 目的是解决什么问题</h1><p>简单来说就是实现图形的底层渲染。比如以下场景：</p>
-<ul>
-<li>游戏开发中，对于游戏场景、人物的渲染。</li>
-<li>音视频开发中，对于视频编码后的数据渲染。</li>
-<li>地图引擎，对于地图上数据渲染。</li>
-<li>核心动画中，实现动画的绘制。</li>
-<li>视频处理中，对于视频加上滤镜效果等。</li>
-<li>图片处理，滤镜、特效等。</li>
-</ul>
 
-            </article>
-            <hr>
-            <div>
-              <div class="post-metas mb-3">
-                
-                  <div class="post-meta mr-3">
-                    <i class="iconfont icon-category"></i>
-                    
-                      <a class="hover-with-bg" href="/categories/OpenGL/">OpenGL</a>
-                    
-                  </div>
-                
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/OpenGL/">OpenGL</a>
-                    
-                  </div>
-                
+
               </div>
-              
-                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
-              
-              
-                <div class="post-prevnext row">
-                  <div class="post-prev col-6">
-                    
-                    
-                      <a href="/2020/08/22/OpenGL/02%20OpenGL%20%E4%B8%93%E4%B8%9A%E5%90%8D%E7%A7%B0%E8%A7%A3%E6%9E%90/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">02、OpenGL专业名称解析</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
-                  </div>
-                  <div class="post-next col-6">
-                    
-                    
-                  </div>
-                </div>
-              
             </div>
-
-            
           </div>
         </div>
       </div>
-    </div>
-    
-      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
-        <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
-  <div id="tocbot"></div>
-</div>
-
-      </div>
-    
-  </div>
-</div>
-
-<!-- Custom -->
-
-
     
   </main>
 
@@ -533,10 +422,10 @@
       }
 
       // 如果是文章，请求文章的浏览数，并自增
-      if ('true' === 'true') {
+      if ('false' === 'true') {
         var viewCtn = document.querySelector('#leancloud-post-views-container');
         if (viewCtn || enableIncr) {
-          var target = decodeURI('/2020/08/22/OpenGL/01%20%E5%9B%BE%E5%BD%A2API%E7%AE%80%E4%BB%8B/');
+          var target = decodeURI('/archives/2021/04/index.html');
           var viewGetter = getRecord(Counter, target).then((record) => {
             incrArr.push(buildIncrement(record.objectId))
             if (viewCtn) {
@@ -598,31 +487,6 @@
 
 
 
-  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
-  <script>
-    $(document).ready(function () {
-      var boardCtn = $('#board-ctn');
-      var boardTop = boardCtn.offset().top;
-
-      tocbot.init({
-        tocSelector: '#tocbot',
-        contentSelector: 'article.markdown-body',
-        headingSelector: 'h1,h2,h3,h4,h5,h6',
-        linkClass: 'tocbot-link',
-        activeLinkClass: 'tocbot-active-link',
-        listClass: 'tocbot-list',
-        isCollapsedClass: 'tocbot-is-collapsed',
-        collapsibleClass: 'tocbot-is-collapsible',
-        collapseDepth: 0,
-        scrollSmooth: true,
-        headingsOffset: -boardTop
-      });
-      if ($('.toc-list-item').length > 0) {
-        $('#toc').css('visibility', 'visible');
-      }
-    });
-  </script>
-
 
 
   <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
@@ -630,7 +494,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "01、图形API简介&nbsp;",
+        "归档&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
@@ -645,21 +509,6 @@
 
 
 
-  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
-  <script>
-    anchors.options = {
-      placement: "right",
-      visible: "hover",
-      
-    };
-    var el = "h1,h2,h3,h4,h5,h6".split(",");
-    var res = [];
-    for (item of el) {
-      res.push(".markdown-body > " + item)
-    }
-    anchors.add(res.join(", "))
-  </script>
-
 
 
   <script  src="/js/local-search.js" ></script>
@@ -673,20 +522,6 @@
   </script>
 
 
-
-  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
-
-  <script>
-    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
-      function () {
-        var element = document.createElement('a');
-        $(element).attr('data-fancybox', 'images');
-        $(element).attr('href', $(this).attr('src'));
-        $(this).wrap(element);
-      }
-    );
-  </script>
 
 
 
