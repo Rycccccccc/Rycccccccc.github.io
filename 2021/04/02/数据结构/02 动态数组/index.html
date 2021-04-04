@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="keywords" content="">
-  <title>数据结构/02 动态数组 - Rycccccccc</title>
+  <title>02、动态数组 - Rycccccccc</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -157,8 +157,8 @@
               
   <div class="mt-3 post-meta">
     <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-    <time datetime="2021-04-04 10:17">
-      2021年4月4日 上午
+    <time datetime="2021-04-02 00:00">
+      2021年4月2日 凌晨
     </time>
   </div>
 
@@ -168,7 +168,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      250 字
+      222 字
     </span>
   
 
@@ -209,15 +209,7 @@
           <div class="post-content mx-auto" id="post">
             
             <article class="markdown-body">
-              <h1 id="02-动态数组"><a href="#02-动态数组" class="headerlink" title="02 动态数组"></a>02 动态数组</h1><!-- 导出到博客文件前提，应该把标题去掉 -->
-
-<hr>
-<p>title: 01、复杂度<br>date: 2021-04-02<br>tags: [数据结构]<br>categories:</p>
-<ul>
-<li>数据结构<br>index_img: /img/DataStructures/DataStructures.png</li>
-</ul>
-<hr>
-<h2 id="1-什么是数据结构"><a href="#1-什么是数据结构" class="headerlink" title="1 什么是数据结构"></a>1 什么是数据结构</h2><ul>
+              <h2 id="1-什么是数据结构"><a href="#1-什么是数据结构" class="headerlink" title="1 什么是数据结构"></a>1 什么是数据结构</h2><ul>
 <li>数据结构是计算机存储、组织数据的方式</li>
 <li>数据结构的类型<ul>
 <li>线性结构<ul>
@@ -247,7 +239,7 @@
 </ul>
 <p>##2 线性表</p>
 <ul>
-<li>线性表具有n个<font color="red">相同类型元素</font>元素的有限<font color="red">序列</font>（n &gt;= 0）<br><img src="/img/DataStructures/media/16175026644604/16175056654551.jpg" srcset="/img/loading.gif" alt=""></li>
+<li>线性表具有n个<font color="red">相同类型元素</font>元素的有限<font color="red">序列</font>（n &gt;= 0）<br><img src="https://raw.githubusercontent.com/Rycccccccc/Rycccccccc.github.io/master/img/DataStructures/media/16175026644604/16175056654551.jpg" srcset="/img/loading.gif" alt=""></li>
 </ul>
 <h2 id="3-数组-Array"><a href="#3-数组-Array" class="headerlink" title="3 数组 Array"></a>3 数组 Array</h2><ul>
 <li>数组是一种<strong>顺序存储</strong>的线性表，所有元素的内存地址是连续的</li>
@@ -258,8 +250,8 @@
 </ul>
 <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] array = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">11</span>,<span class="hljs-number">22</span>,<span class="hljs-number">33</span>};</code></pre>
 <p><img src="https://raw.githubusercontent.com/Rycccccccc/Rycccccccc.github.io/master/img/DataStructures/media/16175026644604/16175058793826.jpg" srcset="/img/loading.gif" alt=""></p>
-<h2 id="4-动态数组-Dynamic-Array-接口设计"><a href="#4-动态数组-Dynamic-Array-接口设计" class="headerlink" title="4 动态数组(Dynamic Array)接口设计"></a>4 动态数组(Dynamic Array)接口设计</h2><p><img src="media/16175026644604/16175059142112.jpg" srcset="/img/loading.gif" alt=""><br><img src="media/16175026644604/16175059652352.jpg" srcset="/img/loading.gif" alt=""></p>
-<h2 id="5-添加元素-add-E-element"><a href="#5-添加元素-add-E-element" class="headerlink" title="5 添加元素 - add(E element)"></a>5 添加元素 - add(E element)</h2><p><img src="media/16175026644604/16175060259496.jpg" srcset="/img/loading.gif" alt=""></p>
+<h2 id="4-动态数组-Dynamic-Array-接口设计"><a href="#4-动态数组-Dynamic-Array-接口设计" class="headerlink" title="4 动态数组(Dynamic Array)接口设计"></a>4 动态数组(Dynamic Array)接口设计</h2><p><img src="https://raw.githubusercontent.com/Rycccccccc/Rycccccccc.github.io/master/img/DataStructures/media/16175026644604/16175059142112.jpg" srcset="/img/loading.gif" alt=""><br><img src="https://raw.githubusercontent.com/Rycccccccc/Rycccccccc.github.io/master/img/DataStructures/media/16175026644604/16175059652352.jpg" srcset="/img/loading.gif" alt=""></p>
+<h2 id="5-添加元素-add-E-element"><a href="#5-添加元素-add-E-element" class="headerlink" title="5 添加元素 - add(E element)"></a>5 添加元素 - add(E element)</h2><p><img src="https://raw.githubusercontent.com/Rycccccccc/Rycccccccc.github.io/master/img/DataStructures/media/16175026644604/16175060259496.jpg" srcset="/img/loading.gif" alt=""></p>
 <h2 id="6-打印数组"><a href="#6-打印数组" class="headerlink" title="6 打印数组"></a>6 打印数组</h2><ul>
 <li>重写toString 方法</li>
 <li>在toString 方法中将元素拼接成字符串</li>
@@ -271,6 +263,20 @@
             <div>
               <div class="post-metas mb-3">
                 
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
+                    
+                  </div>
                 
               </div>
               
@@ -556,7 +562,7 @@
       if ('true' === 'true') {
         var viewCtn = document.querySelector('#leancloud-post-views-container');
         if (viewCtn || enableIncr) {
-          var target = decodeURI('/2021/04/04/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/02%20%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84/');
+          var target = decodeURI('/2021/04/02/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/02%20%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84/');
           var viewGetter = getRecord(Counter, target).then((record) => {
             incrArr.push(buildIncrement(record.objectId))
             if (viewCtn) {
@@ -650,7 +656,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "数据结构/02 动态数组&nbsp;",
+        "02、动态数组&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
